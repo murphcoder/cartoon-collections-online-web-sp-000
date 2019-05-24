@@ -11,5 +11,14 @@ def long_planeteer_calls(calls)
 end
 
 def find_the_cheese(ingredients)
-  
+  cheese_types = ["cheddar", "gouda", "camebert"]
+  i = 0
+  while i < 3 do
+    if ingredients.include?(cheese_types[i])
+      return cheese_types[i]
+      break
+    end
+    i += 1
+  end
+  return nil
 end
